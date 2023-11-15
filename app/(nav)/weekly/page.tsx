@@ -1,9 +1,11 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const Page = () => {
 	return (
 		<main className="flex justify-center items-center text-center min-h-screen">
-			<h1>Home</h1>
+			<h1>Weekly Menu</h1>
 		</main>
 	);
-}
+};
+
+export default Page;
