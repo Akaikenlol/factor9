@@ -5,7 +5,7 @@ import React from "react";
 const Navbar = () => {
 	return (
 		<nav className="flex justify-between items-center text-center gap-5 px-5 py-3 border border-black">
-			<ul className="flex justify-between items-center text-center gap-5 text-sm font-bold">
+			<ul className="flex justify-between items-center text-center gap-5 paragraph-regular ">
 				<Link href="/" className="text-emerald-400">
 					<li>Factor 9</li>
 				</Link>
