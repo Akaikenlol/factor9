@@ -5,7 +5,7 @@ import React from "react";
 
 const Page = () => {
 	return (
-		<div className="">
+		<div className="flex-center">
 			<h2 className="h2-bold">Home</h2>
 			<UserButton afterSignOutUrl="/" />
 		</div>

@@ -37,8 +37,10 @@ export default function RootLayout({
 			}}
 		>
 			<html lang="en">
-				<body className={`${inter.variable} ${spaceGrotest.variable}`}>
-					<Navbar />
+				<body
+					className={`${inter.variable} ${spaceGrotest.variable} flex-center min-h-screen`}
+				>
+					{/* <Navbar /> */}
 
 					{children}
 				</body>
