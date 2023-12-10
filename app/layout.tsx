@@ -3,7 +3,6 @@ import React from "react";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -14,12 +13,13 @@ const inter = Inter({
 const spaceGrotest = Space_Grotesk({
 	subsets: ["latin"],
 	weight: ["300", "400", "500", "600", "700"],
-	variable: "--font-inter",
+	variable: "--font-spaceGrotesk",
 });
 
 export const metadata: Metadata = {
-	title: "Factor 9",
-	description: "Your quick and healthy website.",
+	title: "ChripHub 🐤",
+	description:
+		"Welcome to ChirpHub, where conversations take flight! 🚀 Experience a social platform that's more than just tweets – it's a vibrant community where you can share your thoughts, connect with friends, and join in on trending discussions. ",
 };
 
 export default function RootLayout({
@@ -32,16 +32,12 @@ export default function RootLayout({
 			appearance={{
 				elements: {
 					formButtonPrimary: "primary-gradient",
-					footerActionLink: "primary-text-gradient",
+					footerActionLink: "primary-text-gradient hover:text-primary-500",
 				},
 			}}
 		>
 			<html lang="en">
-				<body
-					className={`${inter.variable} ${spaceGrotest.variable} flex-center min-h-screen`}
-				>
-					{/* <Navbar /> */}
-
+				<body className={`${inter.variable} ${spaceGrotest.variable}`}>
 					{children}
 				</body>
 			</html>
